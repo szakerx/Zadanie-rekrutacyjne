@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace Zadanie_rekrutacyjne {
     class Program {
-        static CarsRepository cs = new CarsRepository();
+        private static CarsRepository cs = new CarsRepository();
         static void Main(string[] args) {
             bool keepGoing = true;
             while (keepGoing) {
@@ -83,7 +83,7 @@ namespace Zadanie_rekrutacyjne {
             Regex capacityRegex = new Regex(@"^\d+\.\d+$");
             if (capacityRegex.IsMatch(name))
                 return true;
-            return true;
+            return false;
         }
 
     }

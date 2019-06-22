@@ -24,11 +24,5 @@ namespace Zadanie_rekrutacyjne {
                 return _instance ?? (_instance = new DBConnection());
             }
         }
-        public static void GetCars() {
-            List<string> cars = new List<string>();
-            using(MySqlConnection conn = new MySqlConnection()) {
-
-            }
-        }
     }
 }
